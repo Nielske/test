@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Basic UI Controls</string>
+    <string name="carrots_text">Wortels</string>
+    <string name="chicken_text">Kip</string>
+    <string name="fish_text">Vis</string>
+    <string name="meatballs_text">Gehaktballen</string>
+    <string name="steak_text">Biefstuk</string>
+</resources>

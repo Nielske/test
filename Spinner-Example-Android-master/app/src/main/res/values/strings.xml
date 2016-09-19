@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Spinner Example</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="emails_array">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

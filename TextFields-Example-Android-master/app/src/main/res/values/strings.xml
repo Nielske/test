@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Text Fields Example</string>
+
+    <string name="name_text">Name:</string>
+    <string name="email_text">Email:</string>
+    <string name="country_text">Select your country:</string>
+
+    <string-array name="countries_array">
+        <item>Finland</item>
+        <item>Sweden</item>
+        <item>Russia</item>
+        <item>Poland</item>
+        <item>England</item>
+        <item>Norway</item>
+        <item>Spain</item>
+        <item>France</item>
+        <item>Fiji</item>
+    </string-array>
+
+</resources>

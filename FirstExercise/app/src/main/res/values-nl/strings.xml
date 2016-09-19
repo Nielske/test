@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EersteOefening</string>
+    <string name="hello_world">Hallo wereld!</string>
+    <string name="hello_world_land">Hallo landschap wereld!</string>
+    <string name="another_string">Hier is nog een voorbeeldtekst!</string>
+</resources>
