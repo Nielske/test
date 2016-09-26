@@ -28,6 +28,7 @@ public class MainActivity extends Activity implements TeamDialogFragment.TeamDia
     public void exitDialog(View view) {
         ExitDialogFragment eDialog = new ExitDialogFragment();
         eDialog.show(getFragmentManager(), "exit");
+
     }
 
     public void listDialog(View view) {

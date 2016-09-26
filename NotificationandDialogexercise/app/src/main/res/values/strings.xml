@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Notification and Dialog exercise</string>
+    <string name="title">Add</string>
+    <string name="dialog_message">Are you sure you want to add this person?</string>
+    <string name="dialog_yes">yes</string>
+    <string name="dialog_cancel">No</string>
+    <string name="notification_title">Member added</string>
+</resources>
