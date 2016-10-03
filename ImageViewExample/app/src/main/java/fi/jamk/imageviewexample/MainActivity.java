@@ -54,6 +54,29 @@ public class MainActivity extends AppCompatActivity {
         task.execute(PATH + images[imageIndex]);
     }
 
+    // this is done in UI thread
+
+    // method gets called when user performs any touch event on screen
+    public boolean onTouchEvent(MotionEvent event) {
+        switch (event.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                x1 = event.getX();
+                break;
+            case MotionEvent.ACTION_UP:
+                x2 = event.getX();
+                if (x1 < x2) { // left to right -> previous
+                    imageIndex--;
+                    if (imageIndex < 0) imageIndex = images.length-1;
+                } else { // right to left -> next
+                    imageIndex++;
+                    if (imageIndex > (images.length-1)) imageIndex = 0;
+                }
+                showImage();
+                break;
+        }
+        return false;
+    }
+
     // asynctask class
     private class DownloadImageTask extends AsyncTask<String,Void,Bitmap> {
 
@@ -78,8 +101,6 @@ public class MainActivity extends AppCompatActivity {
             }
             return bitmap;
         }
-
-        // this is done in UI thread
         @Override
         protected void onPostExecute(Bitmap bitmap) {
             imageView.setImageBitmap(bitmap);
@@ -87,25 +108,7 @@ public class MainActivity extends AppCompatActivity {
             // hide loading progress bar
             progressBar.setVisibility(View.INVISIBLE);
         }
-        // method gets called when user performs any touch event on screen
-        public boolean onTouchEvent(MotionEvent event) {
-            switch (event.getAction()) {
-                case MotionEvent.ACTION_DOWN:
-                    x1 = event.getX();
-                    break;
-                case MotionEvent.ACTION_UP:
-                    x2 = event.getX();
-                    if (x1 < x2) { // left to right -> previous
-                        imageIndex--;
-                        if (imageIndex < 0) imageIndex = images.length-1;
-                    } else { // right to left -> next
-                        imageIndex++;
-                        if (imageIndex > (images.length-1)) imageIndex = 0;
-                    }
-                    showImage();
-                    break;
-            }
-            return false;
-        }
+
+
     }
 }
