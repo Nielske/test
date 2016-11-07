@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 String phone = list.get(position);
                 // create an explicit intent
                 Intent intent = new Intent(MainActivity.this,DetailActivity.class);
+
                 // add data to intent
                 intent.putExtra("phone",phone);
                 // start a new activity

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/my_toolbar"
+        layout="@layout/my_toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="4dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/image"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:adjustViewBounds="false"
+            android:layout_width="wrap_content"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image"
+            android:id="@+id/address"
+            android:text="sample"
+
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:id="@+id/description"
+            android:text="sample"
+
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mail"
+            android:layout_below="@+id/phone"
+            android:text="sample"
+            android:layout_toRightOf="@+id/image"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image"
+            android:layout_below="@+id/address"
+            android:id="@+id/phone"
+            android:text="sample"
+
+             />
+
+        <TextView
+            android:layout_below="@+id/website"
+            android:text="Map:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mText"
+            />
+
+        <TextView
+            android:layout_below="@+id/description"
+            android:text="Website:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wText"
+
+             />
+
+        <TextView
+            android:layout_below="@+id/wText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/website"
+            android:autoLink="all"
+
+            android:text="sample" />
+
+        <TextView
+            android:layout_below="@+id/mText"
+            android:clickable="true"
+            android:text="sample"
+            android:onClick="map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/map"
+             />
+    </RelativeLayout>
+
+</LinearLayout>
